@@ -14,7 +14,7 @@ prompt = args.prompt
 # 2 step: take the returning input string and run the model + embedding with it
 
 model_id = "runwayml/stable-diffusion-v1-5"
-pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float32).to("cpu")
+pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float32).to("cuda")
 
 pipe.load_textual_inversion("/Users/roschkach/Projekte/NewGeneticCreations/models/dna2image_2v.pt")
 
