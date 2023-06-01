@@ -22,7 +22,7 @@ image_name = args.image_name
 
 # load model
 model_id = "runwayml/stable-diffusion-v1-5"
-pipe = StableDiffusionPipeline.from_pretrained(model_id, safety_checker=None, torch_dtype=torch.float32).to("cuda")
+pipe = StableDiffusionPipeline.from_pretrained(model_id, safety_checker=None, torch_dtype=torch.float16).to("cuda")
 
 # load embedding
 pipe.load_textual_inversion(path_emb)
