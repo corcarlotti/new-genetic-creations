@@ -6,8 +6,8 @@ import torch
 parser = argparse.ArgumentParser(description='Run a prompt with the stable diffusion model on trained embedding.')
 parser.add_argument('--prompt', type=str, default='', help='Input prompt for the script')
 parser.add_argument('--inf_steps', type=int, default=100, help='Number of inference steps')
-parser.add_argument('--embedding', type=str, default="/workspace/new-genetic-creations/embeddings/dna2image_2v.pt", help='Path to embedding')
-parser.add_argument('--image_folder', type=str, default="/workspace/new-genetic-creations/images/", help='Path to folder where images are saved')
+parser.add_argument('--embedding', type=str, default="workspace/new-genetic-creations/embeddings/dna2image_2v.pt", help='Path to embedding')
+parser.add_argument('--image_folder', type=str, default="workspace/new-genetic-creations/images/", help='Path to folder where images are saved')
 parser.add_argument('--image_name', type=str, default='genetic_creation.png', help='Name for image')
 args = parser.parse_args()
 
