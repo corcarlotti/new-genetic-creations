@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 from diffusers import StableDiffusionPipeline
 import torch
